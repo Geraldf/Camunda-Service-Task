@@ -1,0 +1,33 @@
+le{
+    "version": "0.2.0",
+    "diagnosticLogging": true,
+    "configurations": [
+        {
+            "diagnosticLogging": true,
+            "type": "node",
+            "request": "launch",
+            "name": "Nodemon ",
+            "runtimeExecutable": null,
+            "args": ["${workspaceRoot}/.compiled/src/index.js"],
+            "preLaunchTask": "compile",
+            "restart": true,
+            "stopOnEntry": false,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "sourceMaps": true
+        },
+        {
+            "name": "Attach",
+            "type": "node",
+            "request": "attach",
+            "port": 9929,
+            "address": "localhost",
+            "restart": true,
+            "sourceMaps": false,
+            "outDir": null,
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": null
+        }
+    ]
+}
